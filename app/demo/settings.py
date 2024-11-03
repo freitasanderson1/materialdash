@@ -36,7 +36,6 @@ MATERIALDASH_ADMIN_SITE = {
     'TRAY_REVERSE': True,
     'NAVBAR_REVERSE': True,
     'SHOW_COUNTS': False,
-    'DJANGO_VERSION': _django_version(),
     'APP_ICONS': {
         'invitations': 'send',
     },
