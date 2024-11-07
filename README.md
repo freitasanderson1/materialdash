@@ -8,9 +8,9 @@ Nosso objetivo é preservar o trabalho feito com o django-material-admin, ao mes
 
 ![Login](https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/login.png)
 
-**login**: *admin*
+<!--**login**: *admin*
 
-**password**: *123qaz123!A*
+**password**: *123qaz123!A*-->
 
 ## Guia de Inicio Rápido
 
