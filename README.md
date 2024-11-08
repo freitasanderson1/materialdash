@@ -1,10 +1,12 @@
 # Django Material Administration
 
-MaterialDash é uma interface de administração moderna e responsiva para Django, baseada em Material Design. Este projeto é uma continuação da biblioteca django-material-admin, que foi descontinuada. Com MaterialDash, buscamos revitalizar e expandir as funcionalidades criadas originalmente, oferecendo uma solução mais atualizada e melhorada para os desenvolvedores.
+MaterialDash é uma interface de administração moderna e responsiva para Django, baseada em Material Design. Este projeto é uma continuação da biblioteca [django-material-admin](https://github.com/MaistrenkoAnton/django-material-admin) de [MaistrenkoAnton](https://github.com/MaistrenkoAnton), que foi descontinuada. Com MaterialDash, buscamos revitalizar e expandir as funcionalidades criadas originalmente, oferecendo uma solução mais atualizada e melhorada para os desenvolvedores.
 
 Nosso objetivo é preservar o trabalho feito com o django-material-admin, ao mesmo tempo em que trazemos novos recursos, correções e melhorias, mantendo o foco em simplicidade, usabilidade e uma experiência de usuário consistente com o Material Design. O MaterialDash possibilita personalizações fáceis e traz um painel administrativo elegante, moderno e funcional para os usuários do Django.
 
 ![PyPi](https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=0.0.22&x2=0)![Python](https://img.shields.io/badge/python-3.4+-blue.svg)![Django](https://img.shields.io/badge/django-2.2+|5.1.2-mediumseagreen.svg)
+
+## [Contribua com o repositório](https://github.com/freitasanderson1/materialdash)
 
 ![Login](https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/login.png)
 
