@@ -8,7 +8,7 @@ Nosso objetivo é preservar o trabalho feito com o django-material-admin, ao mes
 
 ## [Contribua com o repositório](https://github.com/freitasanderson1/materialdash)
 
-![Login](https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/login.png)
+![Login](https://raw.githubusercontent.com/freitasanderson1/materialdash/refs/heads/master/app/demo/screens/login.png)
 
 <!--**login**: *admin*
 
