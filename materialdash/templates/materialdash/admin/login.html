@@ -8,11 +8,15 @@
   {% endblock %}
   <link rel="stylesheet" type="text/css" href="{% static 'materialdash/admin/css/layout.min.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'materialdash/admin/css/login.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'materialdash/admin/css/loginPage.css' %}">
   {% if current_theme and current_theme != 'default' %}
     <link rel="stylesheet" type="text/css" href="{% static 'materialdash/admin/css/admin-out-'|add:current_theme|add:'.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'materialdash/admin/css/admin-out.min.css' %}">
   {% endif %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" defer></script>
+  <script src="{% static "materialdash/admin/js/particles.js" %}"></script>
   <script src="{% static 'materialdash/admin/js/password-toggle.min.js' %}" defer></script>
+
 {% endblock %}
 
 {% block branding %}{% endblock %}
@@ -23,6 +27,8 @@
 
 
 {% block content %}
+  <canvas class="background"></canvas>
+
   <div id="layout-content">
     <div class="text-content">
       {% if form.errors and not form.non_field_errors %}
@@ -96,9 +102,6 @@
           </button>
         </div>
       </form>
-    </div>
-    <div class="side-bar">
-      {% include 'materialdash/admin/includes/admin-out-bg.html' with current_theme=current_theme %}
     </div>
   </div>
 {% endblock %}

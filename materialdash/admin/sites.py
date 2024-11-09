@@ -13,7 +13,7 @@ from materialdash.admin.views import ThemesView
 class MaterialDashAdminSite(AdminSite):
     """Extends AdminSite to add material design for admin interface"""
     favicon = None
-    main_bg_color = None
+    main_bg_color = '#029b75'
     main_hover_color = None
     profile_picture = None
     profile_bg = None

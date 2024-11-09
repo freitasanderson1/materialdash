@@ -2,9 +2,6 @@ import os
 from django.utils.translation import gettext_lazy as _
 import django
 
-def _django_version():
-    return int(django.get_version()[0])
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -26,12 +23,12 @@ MATERIALDASH_ADMIN_SITE = {
     'HEADER':  _('Demo'),
     'TITLE':  _('Demo'),
     'FAVICON':  'demo.png',
-    'MAIN_BG_COLOR':  'green',
+    # 'MAIN_BG_COLOR':  '#029b75',
     'MAIN_HOVER_COLOR':  'black',
-    'PROFILE_PICTURE':  'profile-background.jpeg',
-    'PROFILE_BG':  'profile-background.jpeg',
-    'LOGIN_LOGO':  'profile-background.jpeg',
-    'LOGOUT_BG':  'profile-background.jpeg',
+    # 'PROFILE_PICTURE':  'profile-background.jpeg',
+    # 'PROFILE_BG':  'profile-background.jpeg',
+    # 'LOGIN_LOGO':  'profile-background.jpeg',
+    # 'LOGOUT_BG':  'profile-background.jpeg',
     'SHOW_THEMES':  True,
     'TRAY_REVERSE': True,
     'NAVBAR_REVERSE': True,
@@ -144,11 +141,12 @@ LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'demo/locale')
 ]
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'pt-br'
 
 LANGUAGES = [
     ('en', _('English')),
     ('es', _('Spanish')),
+    ('pt-br', _('Portuguese')),
     ('ru', _('Russian')),
     ('uk', _('Ukrainian')),
     ('zh-hans', _('Chinese')),

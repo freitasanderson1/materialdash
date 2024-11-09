@@ -33,6 +33,7 @@ MATERIALDASH_ADMIN_SITE = {
     'TRAY_REVERSE':  _get_setting('TRAY_REVERSE'),
     'NAVBAR_REVERSE':  _get_setting('NAVBAR_REVERSE'),
     'SHOW_COUNTS':  _get_setting('SHOW_COUNTS'),
+    'LOGIN_VERSION':  _get_setting('LOGIN_VERSION'),
     'DJANGO_VERSION': int(django.get_version()[0]),
     'APP_ICONS': {
         'auth': 'group',

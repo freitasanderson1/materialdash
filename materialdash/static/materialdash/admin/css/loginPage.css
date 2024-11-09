@@ -1,0 +1,28 @@
+#content{
+    background-image: url('../images/background.jpg');
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.text-content{
+    z-index: 10;
+}
+#login-form{
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 1rem 0 1rem 0;
+    
+}
+.password-reset-link{
+    padding: 1rem;
+}
