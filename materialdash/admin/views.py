@@ -12,7 +12,7 @@ class ThemesView(TemplateView):
         {'display': _('Night'), 'name': 'night'},
         {'display': _('Black'), 'name': 'black'},
         {'display': _('Red'), 'name': 'red'},
-        {'display': _('Green'), 'name': 'green'}
+        {'display': _('blue'), 'name': 'blue'}
     )
 
     def get_context_data(self, **kwargs):

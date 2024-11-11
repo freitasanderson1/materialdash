@@ -10,7 +10,7 @@
     {% if profile_bg %}
         <img width="300" height="212" alt="profile background" src="{{ profile_bg }}">
     {% else %}
-        <img src="{% static 'materialdash/admin/images/login-bg-'|add:current_theme|add:'.jpg' %}" alt="profile background">
+        <img class="profile-bg" src="{% static 'materialdash/admin/images/login-bg-'|add:current_theme|add:'.jpg' %}" alt="profile background">
     {% endif %}
     <div class="card-title">
         <strong>{% firstof user.get_short_name user.username|default_if_none:'' %}</strong><br>
