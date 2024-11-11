@@ -1,3 +1,7 @@
+html[data-theme="light"],
+:root {
+    --secondary: #029b75 !important;
+}
 * {
   box-sizing: border-box !important;
 }
@@ -9,7 +13,7 @@ br.clear {
 }
 a {
   text-decoration: none;
-  color: #417690;
+  color: #029b75;
 }
 a:active,
 a:focus,
@@ -17,7 +21,7 @@ a:hover,
 a:link,
 a:visited {
   text-decoration: none;
-  color: #417690;
+  color: #029b75;
 }
 .card-wrapper {
   margin: 0 5px 5px 0;
@@ -69,7 +73,7 @@ fieldset.module {
 fieldset a.collapse-toggle,
 fieldset.collapse.collapsed h2,
 fieldset.collapsed a.collapse-toggle {
-  color: #417690;
+  color: #029b75;
 }
 .submit-row .deletelink-box a.deletelink {
   height: 100%;
@@ -136,16 +140,16 @@ input.valid[type="text"]:not(.browser-default) {
 .module caption,
 .module h2 {
   background: 0 0;
-  color: #417690;
-  border-left: 3px solid #417690;
+  color: #029b75;
+  border-left: 3px solid #029b75;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
 }
 .inline-group h2 {
   background: 0 0;
-  color: #417690;
-  border-left: 3px solid #417690;
+  color: #029b75;
+  border-left: 3px solid #029b75;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;

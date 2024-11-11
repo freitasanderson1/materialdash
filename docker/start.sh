@@ -13,4 +13,4 @@ done;
                            User.objects.filter(username='materialadmin').exists() or \
                            User.objects.create_superuser('materialadmin',
                           'materialadmin@example.com', 'password123')"
-./manage.py runserver 0.0.0.0:8000
+./manage.py runserver 0.0.0.0:8001

@@ -14,7 +14,7 @@ class MaterialDashAdminSite(AdminSite):
     """Extends AdminSite to add material design for admin interface"""
     favicon = None
     main_bg_color = '#029b75'
-    main_hover_color = None
+    main_hover_color = '#00000060'
     profile_picture = None
     profile_bg = None
     login_logo = None
@@ -38,8 +38,8 @@ class MaterialDashAdminSite(AdminSite):
         self.site_header = MATERIALDASH_ADMIN_SITE['HEADER'] or self.site_header
         self.site_title = MATERIALDASH_ADMIN_SITE['TITLE'] or self.site_title
         self.favicon = self.favicon or MATERIALDASH_ADMIN_SITE['FAVICON']
-        self.main_bg_color = self.main_bg_color or MATERIALDASH_ADMIN_SITE['MAIN_BG_COLOR']
-        self.main_hover_color = self.main_hover_color or MATERIALDASH_ADMIN_SITE['MAIN_HOVER_COLOR']
+        self.main_bg_color = MATERIALDASH_ADMIN_SITE['MAIN_BG_COLOR'] or self.main_bg_color
+        self.main_hover_color = MATERIALDASH_ADMIN_SITE['MAIN_HOVER_COLOR'] or self.main_hover_color
         self.profile_picture = self.profile_picture or MATERIALDASH_ADMIN_SITE['PROFILE_PICTURE']
         self.profile_bg = self.profile_bg or MATERIALDASH_ADMIN_SITE['PROFILE_BG']
         self.login_logo = self.login_logo or MATERIALDASH_ADMIN_SITE['LOGIN_LOGO']

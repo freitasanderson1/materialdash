@@ -8,10 +8,10 @@
     top: 3px;
     font-size: 16px;
     cursor: pointer;
-    color: #417690;
+    color: #029b75;
 
     &:hover {
-      background: #417690;
+      background: #029b75;
       color: white;
     }
   }
@@ -63,27 +63,27 @@
   border: none;
   display: flex;
   align-items: center;
-  color: #417690;
+  color: #029b75;
 
   &:hover {
     background: rgba(46, 118, 143, 0.1);
   }
 
   i {
-    color: #417690;
+    color: #029b75;
   }
 }
 
 .active .collapsible-header {
   background: rgba(46, 118, 143, 0.2);
-  color: #417690;
+  color: #029b75;
 }
 
 .collapsible-body {
   > div {
     &:hover {
       background: rgba(46, 118, 143, 0.2);
-      color: #417690;
+      color: #029b75;
     }
 
     cursor: pointer;
@@ -96,7 +96,7 @@
     }
 
     &.active {
-      background-color: #417690;
+      background-color: #029b75;
 
       a {
         color: white;
@@ -119,7 +119,7 @@
 
   span.badge {
     font-size: 13px;
-    color: #417690;
+    color: #029b75;
     margin-top: 0;
   }
 

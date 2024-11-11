@@ -59,16 +59,16 @@ a {
   }
 
   &.choose-item.active i, &.remove-item.active i {
-    color: #417690;
+    color: #029b75;
     cursor: pointer;
   }
 
   &.selector-choose-all.active, &.selector-clear-all.active {
-    color: #417690;
+    color: #029b75;
     cursor: pointer;
 
     i {
-      color: #417690;
+      color: #029b75;
       cursor: pointer;
     }
   }

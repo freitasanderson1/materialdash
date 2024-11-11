@@ -1,9 +1,11 @@
 import os
 from django.utils.translation import gettext_lazy as _
-import django
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -23,8 +25,8 @@ MATERIALDASH_ADMIN_SITE = {
     'HEADER':  _('Demo'),
     'TITLE':  _('Demo'),
     'FAVICON':  'demo.png',
-    # 'MAIN_BG_COLOR':  '#029b75',
-    'MAIN_HOVER_COLOR':  'black',
+    # 'MAIN_BG_COLOR':  '#ff9b75',
+    # 'MAIN_HOVER_COLOR':  '#00000060',
     # 'PROFILE_PICTURE':  'profile-background.jpeg',
     # 'PROFILE_BG':  'profile-background.jpeg',
     # 'LOGIN_LOGO':  'profile-background.jpeg',
@@ -40,6 +42,7 @@ MATERIALDASH_ADMIN_SITE = {
         'invitation': 'contact_mail',
     }
 }
+
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 # Application definition
@@ -102,17 +105,22 @@ WSGI_APPLICATION = 'demo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'HOST': os.environ.get('POSTGRES_HOST'),
+#         'NAME': os.environ.get('POSTGRES_DB'),
+#         'USER': os.environ.get('POSTGRES_USER'),
+#         'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
+#         'PORT': os.environ.get('POSTGRES_PORT'),
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'HOST': os.environ.get('POSTGRES_HOST'),
-        'NAME': os.environ.get('POSTGRES_DB'),
-        'USER': os.environ.get('POSTGRES_USER'),
-        'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
-        'PORT': os.environ.get('POSTGRES_PORT'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
